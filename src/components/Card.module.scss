@@ -1,0 +1,58 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 13rem;
+  border-radius: 10px;
+  height: 15rem;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  padding: 1.5rem;
+  background-color: red;
+  cursor: pointer;
+}
+
+.asda {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.front {
+}
+
+.back{
+  transform: rotateY(180deg);
+}
+
+.back, .front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+  background-color: blue;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.inner {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}

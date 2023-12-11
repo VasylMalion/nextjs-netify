@@ -1,0 +1,58 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 4rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.firstStep {
+  width: 7rem;
+  height: 11rem;
+}
+
+.secondStep {
+  width: 12rem;
+  height: 12rem; 
+}
+
+.thirdStep {
+  width: 10rem;
+  height: 12rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  width: 17rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-top: 4rem;
+  background: #6e6efa;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.endGame {
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
